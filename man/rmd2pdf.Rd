@@ -25,4 +25,10 @@ The name of the xelatex rendered PDF.
 Use knitr and pandoc to convert an R Markdown file into a
 TeX file, and run xelatex (and biber) on the converted file to produce a PDF.
 }
+\examples{
+\dontrun{
+setwd("inst/rmarkdown")
+rmd2pdf()
+}
+}
 
