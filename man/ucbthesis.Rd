@@ -3,8 +3,10 @@
 \name{ucbthesis}
 \alias{ucbthesis}
 \alias{ucbthesis-package}
-\title{ucbthesis.}
+\title{UC Berkeley Graduate Division Thesis Templates}
 \description{
-ucbthesis.
+This package contains latex, knitr and R Markdown templates that
+adhere to the UC Berkeley Graduate Division's thesis guidelines. The templates
+are located in the \code{inst/} directory.
 }
 
