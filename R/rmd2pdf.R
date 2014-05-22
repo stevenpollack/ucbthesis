@@ -18,7 +18,7 @@
 #' knitr templates. The template, \code{inst/rmarkdown/thesis_template.latex},
 #' is a modification of the default template found via
 #' \code{pandoc -D latex}. If you need to add more packages to your preamble,
-#' e.g. \code{\usepackage{amsmath}}, modify \code{thesis_template.latex} 
+#' e.g. \code{\\usepackage{amsmath}}, modify \code{thesis_template.latex} 
 #' accordingly.
 #' 
 #' Temporary files (e.g. .md's, .log's, .aux's, etc.) are stored in a temporary 
