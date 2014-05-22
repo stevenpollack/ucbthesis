@@ -114,11 +114,11 @@ I want to thank my advisor for advising me.
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-% call biber on the compiled .tex to calculate references
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
-<<biberCall, cache=FALSE, echo=FALSE>>=
-system("biber mwe")
-@
-
-%%%%%%%%%%%%%%%%%%%%%%%%
+% call biber on the compiled .tex to calculate references;
+% uncomment this if you are NOT using rnw2pdf to render your pdf
+%
+% <<biberCall, cache=FALSE, echo=FALSE>>=
+% system("biber mwe")
+% @
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%
