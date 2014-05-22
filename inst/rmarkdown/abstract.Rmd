@@ -1,0 +1,18 @@
+```{r, cache=FALSE, echo=FALSE}
+set_parent("thesis.Rmd")
+```
+
+<!--
+(This is included by thesis.tex; you do not latex it by itself.)
+-->
+
+\begin{abstract}
+
+% The text of the abstract goes here.  If you need to use a \section
+% command you will need to use \section*, \subsection*, etc. so that
+% you don't get any numbering.  You probably won't be using any of
+% these commands in the abstract anyway.
+
+Invasive brag; forbearance.
+
+\end{abstract}
