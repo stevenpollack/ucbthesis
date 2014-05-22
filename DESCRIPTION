@@ -1,0 +1,15 @@
+Package: ucbthesis
+Title: UC Berkeley graduate division thesis template
+Version: 1.0
+Author: Steven Pollack <steven@pollackphoto.net>
+Description: Demonstrates UC Berkeley thesis templates for .tex, .Rnw, and
+    .Rmd formats
+Depends:
+    R (>= 3.1.0)
+Date: May 22, 2014
+Imports:
+    knitr,
+    stringr
+License: GPL-2
+Roxygen: list(wrap = FALSE)
+LazyData: true
