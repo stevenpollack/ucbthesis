@@ -18,7 +18,7 @@ Installation
 ### xelatex
 The package functions `rnw2pdf` and `rmd2pdf` make system calls to xelatex 
 (and biber). These normally come installed on OS X and Linux systems. 
-Double check that you can access these by running the following at the command
+Double check that they are accessible by running the following at the command
 line:
 ```
 which xelatex
