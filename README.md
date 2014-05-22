@@ -15,6 +15,34 @@ and check out the templates in the `inst/` directory.
 
 Installation
 --------------
+### xelatex
+The package functions `rnw2pdf` and `rmd2pdf` make system calls to xelatex 
+(and biber). These normally come installed on OS X and Linux systems. 
+Double check that you can access these by running the following at the command
+line:
+```
+which xelatex
+which biber
+```
+
+### pandoc
+This package uses [pandoc](http://johnmacfarlane.net/pandoc/installing.html) to
+convert markdown (.md) files to latex (.tex) files. `rmd2pdf` will not run 
+unless `pandoc` is accesible via the command-line. I.e., `which pandoc` 
+returns a non-null string.
+
+This version was tested on pandoc version 1.12.4, however the version available
+in the ubuntu software center (1.12.3) should suffice. 
+If it doesn't you'll have to manually install pandoc and create system links via
+```
+sudo ln -s /full/path/to/.cabal/.bin /usr/local/bin
+```
+And then double check that everything works with
+```
+which pandoc
+```
+
+### the actual package
 To install this as an R package, and therefore access the templates, as well as
 the helper functions `rnw2pdf` and `rmd2pdf`, you can either clone this repo,
 and build the package manually, or use `devtools` via:
