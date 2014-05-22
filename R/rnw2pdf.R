@@ -9,6 +9,14 @@
 #' @param saveTmpFiles logical flag indicating if intermediary files should be 
 #' kept after PDF file is created. If \code{FALSE} the files are deleted.
 #' 
+#' @details
+#' This is just a sequence of system calls that runs knitr to turn the .Rnw into
+#' a .tex, and then calls xelatex (and biber) a few more times to make sure 
+#' citations and cross-references are correct.
+#' 
+#' Temporary files (e.g. .tex's, .log's, .aux's, etc.) are stored in a temporary 
+#' (sub)directory, \code{tmp/}.
+#' 
 #' @export
 #' 
 #' @return The name of the xelatex rendered PDF.

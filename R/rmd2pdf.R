@@ -11,6 +11,19 @@
 #' @param saveTmpFiles logical flag indicating if intermediary files should be 
 #' kept after PDF file is created. If \code{FALSE} the files are deleted.
 #' 
+#' @details 
+#' There's no markdown (yet) that allows for LaTeX preamble to be specified
+#' inside a .md file. To get around this, we have to redefine a Pandoc latex
+#' template using the preamble we'd normally use if we were using the LaTeX or
+#' knitr templates. The template, \code{inst/rmarkdown/thesis_template.latex},
+#' is a modification of the default template found via
+#' \code{pandoc -D latex}. If you need to add more packages to your preamble,
+#' e.g. \code{\usepackage{amsmath}}, modify \code{thesis_template.latex} 
+#' accordingly.
+#' 
+#' Temporary files (e.g. .md's, .log's, .aux's, etc.) are stored in a temporary 
+#' (sub)directory, \code{tmp/}.
+#' 
 #' @export
 #' 
 #' @return The name of the xelatex rendered PDF.

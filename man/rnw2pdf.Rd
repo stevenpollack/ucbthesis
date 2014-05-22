@@ -21,6 +21,14 @@ The name of the xelatex rendered PDF.
 Use knitr to convert an Rnw file into xelatex (and biber)
 rendered PDF.
 }
+\details{
+This is just a sequence of system calls that runs knitr to turn the .Rnw into
+a .tex, and then calls xelatex (and biber) a few more times to make sure
+citations and cross-references are correct.
+
+Temporary files (e.g. .tex's, .log's, .aux's, etc.) are stored in a temporary
+(sub)directory, \code{tmp/}.
+}
 \examples{
 \dontrun{
 setwd("inst/knitr")

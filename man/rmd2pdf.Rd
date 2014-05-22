@@ -25,6 +25,19 @@ The name of the xelatex rendered PDF.
 Use knitr and pandoc to convert an R Markdown file into a
 TeX file, and run xelatex (and biber) on the converted file to produce a PDF.
 }
+\details{
+There's no markdown (yet) that allows for LaTeX preamble to be specified
+inside a .md file. To get around this, we have to redefine a Pandoc latex
+template using the preamble we'd normally use if we were using the LaTeX or
+knitr templates. The template, \code{inst/rmarkdown/thesis_template.latex},
+is a modification of the default template found via
+\code{pandoc -D latex}. If you need to add more packages to your preamble,
+e.g. \code{\usepackage{amsmath}}, modify \code{thesis_template.latex}
+accordingly.
+
+Temporary files (e.g. .md's, .log's, .aux's, etc.) are stored in a temporary
+(sub)directory, \code{tmp/}.
+}
 \examples{
 \dontrun{
 setwd("inst/rmarkdown")
