@@ -52,8 +52,7 @@ library(devtools)
 devtools::install_github(repo = "ucbthesis", username = "stevenpollack")
 ```
 
-I don't forsee this package every making it to CRAN (though it passes all the
-checks), so this is your best means of obtaining this code.
+The package is also on [CRAN](http://cran.r-project.org/web/packages/ucbthesis/), but this version on GitHub may be more up to date. 
 
 Usage
 -----------------
